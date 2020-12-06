@@ -26,6 +26,7 @@ function modalHandling() {
   })
   .catch(function(error) {
     alert(`${error.message}`);
+    console.log(error)
     document.querySelector("#modal-message").textContent = `${error.message}`;
     document.querySelector("#modal").hidden = false;
   })
