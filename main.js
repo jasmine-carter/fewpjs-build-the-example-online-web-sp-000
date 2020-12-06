@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //when someone clicks heart, invoke mimicServerCall
 
 function addHeartListener() {
-  document.querySelectorAll(".like-glyph").forEach(item => {
+  document.querySelector(".like-glyph").forEach(item => {
     addEventListener("click", event => {
     modalHandling();
   })
