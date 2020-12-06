@@ -6,14 +6,16 @@ const FULL_HEART = '♥'
 document.addEventListener("DOMContentLoaded", () => {
   let errorModal = document.querySelector("#modal");
   errorModal.hidden = true;
+  document.querySelectorAll(".like-glyph").forEach(item => {
+    item.addEventListener("click", event => {
+      mimicServerCall("url")
+    })
+  })
 }) //end of dom content loaded listener
 //when someone clicks a heart, modal appears and set ti "Recognizing events"
 //when someone clicks heart, invoke mimicServerCall
 
 
-document.querySelectorAll(".like-glyph").addEventListener("click", event => {
-    mimicServerCall("url")
-})
 
 function modalHandling() { //if server returns error, show modal
   mimicServerCall("url")
