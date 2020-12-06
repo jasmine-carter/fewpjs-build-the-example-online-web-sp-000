@@ -19,14 +19,12 @@ function heartListener() {
 }
 
 function modalHandling() {
-  //if randomfailure
   mimicServerCall("url")
   .then(function(response){
     console.log(response);
   })
   .catch(function(error) {
     alert(`${error}`);
-    console.log(error)
     document.querySelector("#modal-message").textContent = `${error}`;
     document.querySelector("#modal").hidden = false;
   })
