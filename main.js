@@ -27,6 +27,7 @@ function modalHandling() { //if server returns error, show modal
   })
   .catch(function(error) {
     alert(`${error}`);
+    console.log(error)
     document.querySelector("#modal-message").textContent = `${error}`;
     document.querySelector("#modal").hidden = false;
     hideModal()
