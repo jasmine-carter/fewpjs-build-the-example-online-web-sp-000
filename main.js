@@ -22,6 +22,7 @@ function modalHandling() {
   //if randomfailure
   mimicServerCall()
   .then(function(response){
+    console.log(response)
     return response.json();
     console.log(json)
   })
