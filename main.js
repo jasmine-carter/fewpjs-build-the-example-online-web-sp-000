@@ -37,8 +37,13 @@ function hideModal() {
 }
 
 function heartColorization() {
-  let heart = document.querySelector(".like-glyph")
-  heart.className = "activated-heart"
+  let heart = document.querySelector(".like").firstElementChild
+    if(heart.className == "like-glyph") { //heart is class activated-heart set class to like-glyph
+        heart.className = "activated-heart"
+    }
+    else {
+      heart.className = "like-glyph"
+    }
 }
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
