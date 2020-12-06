@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //when someone clicks heart, invoke mimicServerCall
 
 
-function
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
