@@ -23,7 +23,6 @@ function modalHandling() {
   mimicServerCall("url")
   .then(function(response){
     console.log(response);
-    console.log(json)
   })
   .catch(function(error) {
     alert(`${error.message}`);
