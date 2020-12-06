@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addHeartListener() {
     hearts = document.getElementsByClassName("like-glyph");
-    for (let i = 0; i < items.length; i++) {
-	     items[i].addEventListener("click", modalHandling())
+    for (let i = 0; i < hearts.length; i++) {
+	     hearts[i].addEventListener("click", modalHandling())
      }
 }
 function modalHandling() { //if server returns error, show modal
