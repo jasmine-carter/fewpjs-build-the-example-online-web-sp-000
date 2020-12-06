@@ -5,7 +5,6 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 document.addEventListener("DOMContentLoaded", () => {
   let errorModal = document.querySelector("#modal");
-  errorModal.hidden = true;
   document.querySelectorAll(".like-glyph").forEach(item => {
     item.addEventListener("click", event => {
       modalHandling(event)
