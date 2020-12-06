@@ -21,7 +21,7 @@ function modalHandling() { //if server returns error, show modal
   mimicServerCall("url")
   .then(function(response){
     console.log(response);
-    heartColorization();
+    heartColorization(event);
   })
   .catch(function(error) {
     alert(`${error}`);
@@ -36,7 +36,7 @@ function hideModal() {
   setTimeout(function(){document.querySelector("#modal").hidden = true}, 5000);
 }
 
-function heartColorization(event.target) {
+function heartColorization(event) {
   console.log(event.target)
   let heart = document.querySelector(".like").firstElementChild
     if(heart.className == "like-glyph") { //heart is class activated-heart set class to like-glyph
