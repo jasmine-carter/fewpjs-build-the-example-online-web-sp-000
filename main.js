@@ -28,7 +28,6 @@ function modalHandling() {
     alert("something went wrong");
     console.log(error.message)
   })
-  })
 }
 
 function heartColorization() {
