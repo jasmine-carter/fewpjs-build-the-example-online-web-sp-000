@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   errorModal.hidden = true;
   document.querySelectorAll(".like-glyph").forEach(item => {
     item.addEventListener("click", event => {
-      modalHandling()
+      modalHandling(event)
     })
   })
 }) //end of dom content loaded listener
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-function modalHandling() { //if server returns error, show modal
+function modalHandling(event) { //if server returns error, show modal
   mimicServerCall("url")
   .then(function(response){
     console.log(response);
