@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function heartListener() {
   document.querySelectorAll(".like-glyph").addEventListener("click", event => {
-    mimicServerCall
+    mimicServerCall("url)")
   })
 }
 
-function modalHandling() {
+function modalHandling() { //if server returns error, show modal
   mimicServerCall("url")
   .then(function(response){
     console.log(response);
