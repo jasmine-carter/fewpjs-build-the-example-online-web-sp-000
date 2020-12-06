@@ -7,11 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let errorModal = document.querySelector("#modal");
   errorModal.style.display = "none"
 
-})
-//at DOM load, set div with id modal, to hidden
+}) //end of dom content loaded listener
 //when someone clicks a heart, modal appears and set ti "Recognizing events"
 //when someone clicks heart, invoke mimicServerCall
 
+
+function
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
