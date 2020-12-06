@@ -5,7 +5,7 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 document.addEventListener("DOMContentLoaded", () => {
   let errorModal = document.querySelector("#modal");
-  errorModal.hidden = true
+  errorModal.hidden = true;
 
 }) //end of dom content loaded listener
 //when someone clicks a heart, modal appears and set ti "Recognizing events"
