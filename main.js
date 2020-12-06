@@ -19,7 +19,18 @@ function heartListener() {
 }
 
 function modalHandling() {
-  
+  //if randomfailure
+  fetch(mimicServerCall)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(object) {
+    console.log(object)
+  })
+}
+
+function heartColorization() {
+  //will control logic of if should be colored in or not
 }
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
