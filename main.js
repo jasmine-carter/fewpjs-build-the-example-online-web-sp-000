@@ -12,7 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 //when someone clicks heart, invoke mimicServerCall
 
 
+function heartListener() {
+  document.querySelectorAll(".like-glyph").addEventListener("click", event => {
+    mimicServerCall
+  })
+}
 
+function modalHandling() {
+  
+}
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
