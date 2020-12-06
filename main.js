@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelectorAll(".like-glyph").addEventListener("click", event => {
     mimicServerCall("url")
-}
+})
 
 function modalHandling() { //if server returns error, show modal
   mimicServerCall("url")
