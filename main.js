@@ -25,7 +25,7 @@ function modalHandling() {
     return response.json();
   })
   .catch(function(error) {
-    alert(`$error.message`);
+    alert(`${error.message}`);
     console.log(error.message)
   })
 }
