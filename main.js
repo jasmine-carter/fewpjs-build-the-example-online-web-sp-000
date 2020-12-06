@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function addHeartListener() {
   document.querySelectorAll(".like-glyph").forEach(item => {
     addEventListener("click", event => {
-    modalHandling() 
+    modalHandling();
   })
 })
 }
