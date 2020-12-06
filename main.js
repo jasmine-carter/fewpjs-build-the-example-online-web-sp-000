@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function heartListener() {
   document.querySelectorAll(".like-glyph").addEventListener("click", event => {
-    mimicServerCall("url)")
+    mimicServerCall("url")
   })
 }
 
