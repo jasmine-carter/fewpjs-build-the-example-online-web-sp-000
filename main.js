@@ -22,6 +22,7 @@ function modalHandling() { //if server returns error, show modal
   mimicServerCall("url")
   .then(function(response){
     console.log(response);
+    heartColorization()
   })
   .catch(function(error) {
     alert(`${error}`);
