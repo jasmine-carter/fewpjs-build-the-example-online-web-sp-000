@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
 //when someone clicks a heart, modal appears and set ti "Recognizing events"
 //when someone clicks heart, invoke mimicServerCall
 
-function addHeartListener() {
-    hearts = document.getElementsByClassName("like-glyph");
-    for (let i = 0; i < hearts.length; i++) {
-	     hearts[i].addEventListener("click", modalHandling())
-     }
+function heartListener() {
+  document.querySelectorAll(".like-glyph").addEventListener("click", event => {
+    mimicServerCall("url")
+  })
 }
 
 function modalHandling() { //if server returns error, show modal
