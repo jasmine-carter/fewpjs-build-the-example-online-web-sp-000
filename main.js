@@ -29,7 +29,7 @@ function modalHandling() { //if server returns error, show modal
     alert(`${error}`);
     console.log(error)
     document.querySelector("#modal").hidden = false;
-    document.querySelector("#modal-message").textContent = `${error}`;
+    document.querySelector("#modal-message").textContent = error;
     hideModal()
   })
 }
