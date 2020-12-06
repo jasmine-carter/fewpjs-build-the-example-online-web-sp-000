@@ -3,8 +3,14 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+document.addEventListener("DOMContentLoaded", () => {
+  let errorModal = document.querySelector("#modal");
+  errorModal.style.display = "none"
 
-
+})
+//at DOM load, set div with id modal, to hidden
+//when someone clicks a heart, modal appears and set ti "Recognizing events"
+//when someone clicks heart, invoke mimicServerCall
 
 
 //------------------------------------------------------------------------------
