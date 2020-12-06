@@ -27,11 +27,12 @@ function modalHandling() { //if server returns error, show modal
     alert(`${error}`);
     document.querySelector("#modal-message").textContent = `${error}`;
     document.querySelector("#modal").hidden = false;
+    hideModal()
   })
 }
 
 function hideModal() {
-  setTimeout(function(){document.querySelector("#modal").hidden = true}, 5000)
+  setTimeout(function(){document.querySelector("#modal").hidden = true}, 5000);
 }
 function heartColorization() {
   //will control logic of if should be colored in or not
