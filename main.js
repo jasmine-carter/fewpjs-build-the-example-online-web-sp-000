@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function addHeartListener() {
   document.querySelectorAll(".like-glyph").forEach(item => {
     addEventListener("click", event => {
-    mimicServerCall("url")
+    modalHandling() 
   })
 })
 }
@@ -37,8 +37,8 @@ function modalHandling() { //if server returns error, show modal
 function hideModal() {
   setTimeout(function(){document.querySelector("#modal").hidden = true}, 5000);
 }
+
 function heartColorization() {
-  //will control logic of if should be colored in or not
   let heart = document.querySelector(".like-glyph")
   heart.className = "activated-heart"
 }
