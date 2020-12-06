@@ -21,11 +21,13 @@ function heartListener() {
 function modalHandling() {
   //if randomfailure
   mimicServerCall()
-  .then(function(response) {
-    return response();
+  .then(function(response){
+    return response.json();
   })
-  .then(function(object) {
-    console.log(object)
+  .catch(function(error) {
+    alert("something went wrong");
+    console.log(error.message)
+  })
   })
 }
 
