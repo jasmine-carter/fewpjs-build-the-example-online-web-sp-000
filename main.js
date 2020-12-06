@@ -6,7 +6,7 @@ const FULL_HEART = '♥'
 document.addEventListener("DOMContentLoaded", () => {
   let errorModal = document.querySelector("#modal");
   errorModal.hidden = true;
-
+  addHeartListener();
 }) //end of dom content loaded listener
 //when someone clicks a heart, modal appears and set ti "Recognizing events"
 //when someone clicks heart, invoke mimicServerCall
@@ -17,6 +17,7 @@ function addHeartListener() {
 	     hearts[i].addEventListener("click", modalHandling())
      }
 }
+
 function modalHandling() { //if server returns error, show modal
   mimicServerCall("url")
   .then(function(response){
