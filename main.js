@@ -36,6 +36,8 @@ function hideModal() {
 }
 function heartColorization() {
   //will control logic of if should be colored in or not
+  let heart = document.querySelector(".like-glyph")
+  heart.className = "activated-heart"
 }
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
