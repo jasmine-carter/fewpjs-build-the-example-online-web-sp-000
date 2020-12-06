@@ -20,7 +20,7 @@ function heartListener() {
 
 function modalHandling() {
   //if randomfailure
-  fetch(mimicServerCall)
+  fetch(mimicServerCall())
   .then(function(response) {
     return response.json();
   })
